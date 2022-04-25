@@ -1,0 +1,9 @@
+POP Lab2.WorkflowTemplate.CommandWorker.PopWorker
+PUSH Lab2.WorkflowTemplate.CommandWorker.PushWorker
++ Lab2.WorkflowTemplate.CommandWorker.AddWorker
+- Lab2.WorkflowTemplate.CommandWorker.SubWorker
+* Lab2.WorkflowTemplate.CommandWorker.MulWorker
+/ Lab2.WorkflowTemplate.CommandWorker.DivWorker
+SQRT Lab2.WorkflowTemplate.CommandWorker.SqrtWorker
+PRINT Lab2.WorkflowTemplate.CommandWorker.PrintWorker
+DEFINE Lab2.WorkflowTemplate.CommandWorker.DefineWorker
