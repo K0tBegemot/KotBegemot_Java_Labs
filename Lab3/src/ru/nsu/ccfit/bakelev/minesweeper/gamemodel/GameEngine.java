@@ -170,8 +170,8 @@ public class GameEngine implements MinesweeperActionsInterface, GameStateObserva
     private void generateField(Dot dot)
     {
         initField();
-        //layMines(dot);
-        layMinesTest();
+        layMines(dot);
+        //layMinesTest();
         setNumbers();
         state = GameStates.GAME;
     }
