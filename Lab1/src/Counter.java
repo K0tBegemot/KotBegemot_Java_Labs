@@ -8,7 +8,7 @@ public class Counter
     {
         counter = number;
     }
-    public void Add() throws OverflowException
+    public void add() throws OverflowException
     {
         if(counter < Integer.MAX_VALUE)
         {
@@ -18,7 +18,7 @@ public class Counter
             throw new OverflowException("Overflow of Counter class object");
         }
     }
-    public void Sub() throws OverflowException
+    public void sub() throws OverflowException
     {
         if(counter > Integer.MIN_VALUE)
         {
@@ -29,7 +29,7 @@ public class Counter
         }
     }
 
-    public int GetCounter()
+    public int getCounter()
     {
         return counter;
     }

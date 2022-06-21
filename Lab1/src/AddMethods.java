@@ -11,7 +11,7 @@ public class AddMethods
     public static final char SEPARATOR = ',';
     public static final String REGEX = "[\\W]+";
 
-    public static String CSVName(String oldTxtName)
+    public static String csvName(String oldTxtName)
     {
         int dotIndex = 0;
         for (int i = oldTxtName.codePointCount(0, oldTxtName.length()) - 1; i > 0; i--)
@@ -28,7 +28,7 @@ public class AddMethods
         return newTxtName;
     }
 
-    public static HashMap<String, Integer> ScanFile(Scanner reader, Counter WordCounter, ArrayList<String> words)
+    public static HashMap<String, Integer> scanFile(Scanner reader, Counter WordCounter, ArrayList<String> words)
     {
         var WordCounterMap = new HashMap<String, Integer>();
         while (reader.hasNextLine())
@@ -41,24 +41,24 @@ public class AddMethods
                 {
                     words.add(i);
                 }
-                WordCounter.Add();
+                WordCounter.add();
                 WordCounterMap.put(i, WordCounterMap.getOrDefault(i, 0) + 1);
             }
         }
         return WordCounterMap;
     }
 
-    public static void WriteCSVFile(PrintWriter writer, HashMap<String, Integer> wordMap, Counter wordCounter, ArrayList<String> words)
+    public static void writeCSVFile(PrintWriter writer, HashMap<String, Integer> wordMap, Counter wordCounter, ArrayList<String> words)
     {
         ArrayList<Entry> listOfEntries = new ArrayList<Entry>();
         for (String word : words)
         {
             listOfEntries.add(new Entry(word, wordMap.get(word)));
         }
-        listOfEntries.sort((Entry a, Entry b) -> {return b.GetNumber() - a.GetNumber();});
+        listOfEntries.sort((Entry a, Entry b) -> {return b.getNumber() - a.getNumber();});
         for(Entry entry : listOfEntries)
         {
-            writer.printf("%s%c%d%c%.2f\n", entry.GetString(), SEPARATOR, entry.GetNumber(), SEPARATOR, (double)entry.GetNumber() / wordCounter.GetCounter());
+            writer.printf("%s%c%d%c%.2f\n", entry.getString(), SEPARATOR, entry.getNumber(), SEPARATOR, (double)entry.getNumber() / wordCounter.getCounter());
         }
     }
 }

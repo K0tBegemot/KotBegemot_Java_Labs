@@ -5,11 +5,11 @@ public class Entry
         string = str;
         number = num;
     }
-    public String GetString()
+    public String getString()
     {
         return string;
     }
-    public int GetNumber()
+    public int getNumber()
     {
         return number;
     }

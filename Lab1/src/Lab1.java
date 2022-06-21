@@ -11,16 +11,12 @@ public class Lab1
         {
             System.err.println("You didn't provide a working filename. Restart the program and specify it");
         }
-        Scanner reader = null;
-        PrintWriter writer = null;
-        try
+        try(Scanner reader = new Scanner(Path.of(argv[0])); PrintWriter writer = new PrintWriter(AddMethods.csvName(argv[0])))
         {
-            reader = new Scanner(Path.of(argv[0]));
-            writer = new PrintWriter(AddMethods.CSVName(argv[0]));
             Counter wordCounter = new Counter(0);
             ArrayList<String> words = new ArrayList<String>();
-            HashMap<String, Integer> wordMap = AddMethods.ScanFile(reader, wordCounter, words);
-            AddMethods.WriteCSVFile(writer, wordMap, wordCounter, words);
+            HashMap<String, Integer> wordMap = AddMethods.scanFile(reader, wordCounter, words);
+            AddMethods.writeCSVFile(writer, wordMap, wordCounter, words);
         }
         catch(IOException e)
         {
@@ -37,15 +33,6 @@ public class Lab1
         catch(OverflowException oee)
         {
             System.err.println(oee.getMessage());
-        }
-        finally
-        {
-            if (reader != null) {
-                reader.close();
-            }
-            if (writer != null) {
-                writer.close();
-            }
         }
     }
 }
