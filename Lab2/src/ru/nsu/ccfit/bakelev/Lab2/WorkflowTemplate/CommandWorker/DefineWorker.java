@@ -10,25 +10,27 @@ public class DefineWorker extends CommandWorker
     private static final int INDEXOFVALUE = 1;
 
     @Override
-    public void ExecuteCommand(ExecutionContext context) throws CommandExecuteException
+    public void executeCommand(ExecutionContext context) throws CommandExecuteException
     {
-        if(context.argArray.length < NUMBEROFARGS)
+        if(context==null || context.stackOfNumbers == null || context.argArray == null || context.aliasMap == null)
         {
-            throw new CommandExecuteException("Too few argument for command Define. ");
+            throw new CommandExecuteException("Null ExecutionContext or needed field of ExecutionContext. Command Define");
         }else
         {
-            Double tmp = null;
-            try
-            {
-                tmp = Double.valueOf(context.argArray[INDEXOFALIAS]);
-            }
-            catch(NumberFormatException e)//normal
-            {
-                context.aliasMap.put(context.argArray[INDEXOFALIAS], Double.valueOf(context.argArray[INDEXOFVALUE]));
-            }
-            if(tmp != null)//error
-            {
-                throw new CommandExecuteException("It is forbidden to use numbers as variable names in order to avoid situations like 2 + 2 = 6. Command Define");
+            if (context.argArray.length < NUMBEROFARGS) {
+                throw new CommandExecuteException("Too few argument for command Define. ");
+            } else {
+                Double tmp = null;
+                try {
+                    tmp = Double.valueOf(context.argArray[INDEXOFALIAS]);
+                } catch (NumberFormatException e)//normal
+                {
+                    context.aliasMap.put(context.argArray[INDEXOFALIAS], Double.valueOf(context.argArray[INDEXOFVALUE]));
+                }
+                if (tmp != null)//error
+                {
+                    throw new CommandExecuteException("It is forbidden to use numbers as variable names in order to avoid situations like 2 + 2 = 6. Command Define");
+                }
             }
         }
     }

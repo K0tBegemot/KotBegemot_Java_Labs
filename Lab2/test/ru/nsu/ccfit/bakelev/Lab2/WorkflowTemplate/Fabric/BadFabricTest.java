@@ -19,10 +19,10 @@ public class BadFabricTest
         Logger logger = Logger.getLogger("Lab2Test");
         String configFileBad = "configFileBad.txt";
         Fabric fabric = new Fabric(configFileBad, logger);
-        Assertions.assertThrows(ConfigFileException.class, fabric::ReadConfigFile);
+        Assertions.assertThrows(ConfigFileException.class, fabric::readConfigFile);
         Fabric fabric2 = new Fabric(Const.configFile, logger);
         Assertions.assertThrows(NonExistentCommandWorkerException.class, ()->{
-            CommandWorker worker = fabric2.CreateCommandWorker("BadName");
+            CommandWorker worker = fabric2.createCommandWorker("BadName");
         });
     }
 }

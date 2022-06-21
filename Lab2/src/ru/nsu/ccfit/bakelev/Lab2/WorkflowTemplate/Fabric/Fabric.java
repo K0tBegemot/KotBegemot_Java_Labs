@@ -29,7 +29,7 @@ public class Fabric
         logger = log;
     }
 
-    public void ReadConfigFile() throws ConfigFileException
+    public void readConfigFile() throws ConfigFileException
     {
         try(Scanner reader = new Scanner(Path.of(configFileName)))
         {
@@ -68,7 +68,7 @@ public class Fabric
         }
     }
 
-    public CommandWorker CreateCommandWorker(String commandName) throws NonExistentCommandWorkerException
+    public CommandWorker createCommandWorker(String commandName) throws NonExistentCommandWorkerException
     {
         CommandWorker retValue = null;
         String className = configMap.get(commandName);

@@ -4,5 +4,5 @@ import ru.nsu.ccfit.bakelev.Lab2.WorkflowTemplate.Exception.CommandExecuteExcept
 
 public abstract class CommandWorker
 {
-    public abstract void ExecuteCommand(ExecutionContext context) throws CommandExecuteException;
+    public abstract void executeCommand(ExecutionContext context) throws CommandExecuteException;
 }

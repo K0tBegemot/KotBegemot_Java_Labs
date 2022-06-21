@@ -7,14 +7,18 @@ public class AddWorker extends CommandWorker
     private static final int NUMBEROFARGS = 2;
 
     @Override
-    public void ExecuteCommand(ExecutionContext context) throws CommandExecuteException
+    public void executeCommand(ExecutionContext context) throws CommandExecuteException
     {
-        if(context.stackOfNumbers.size() < NUMBEROFARGS)
+        if(context==null || context.stackOfNumbers == null || context.argArray == null || context.aliasMap == null)
         {
-            throw new CommandExecuteException("Too few arguments on stack. Command Add.");
+            throw new CommandExecuteException("Null ExecutionContext or needed field of ExecutionContext. Command Add");
         }else
         {
-            context.stackOfNumbers.push(context.stackOfNumbers.pop() + context.stackOfNumbers.pop());
+            if (context.stackOfNumbers.size() < NUMBEROFARGS) {
+                throw new CommandExecuteException("Too few arguments on stack. Command Add.");
+            } else {
+                context.stackOfNumbers.push(context.stackOfNumbers.pop() + context.stackOfNumbers.pop());
+            }
         }
     }
 }

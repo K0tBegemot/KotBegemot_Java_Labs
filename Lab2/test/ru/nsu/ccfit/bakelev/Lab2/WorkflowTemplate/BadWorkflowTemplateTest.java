@@ -22,9 +22,9 @@ public class BadWorkflowTemplateTest
         WorkflowTemplate templateBad1 = new WorkflowTemplate(configFile2, commandFile1, logger);
         WorkflowTemplate templateBad2 = new WorkflowTemplate(configFile1, commandFile2, logger);
         WorkflowTemplate templateBad3 = new WorkflowTemplate(configFile2, commandFile2, logger);
-        Assertions.assertDoesNotThrow(templateGood::ExecuteWorkflowTemplate);
-        Assertions.assertThrows(WorkflowTemplateException.class, templateBad1::ExecuteWorkflowTemplate);
-        Assertions.assertThrows(WorkflowTemplateException.class, templateBad2::ExecuteWorkflowTemplate);
-        Assertions.assertThrows(WorkflowTemplateException.class, templateBad3::ExecuteWorkflowTemplate);
+        Assertions.assertDoesNotThrow(templateGood::executeWorkflowTemplate);
+        Assertions.assertThrows(WorkflowTemplateException.class, templateBad1::executeWorkflowTemplate);
+        Assertions.assertThrows(WorkflowTemplateException.class, templateBad2::executeWorkflowTemplate);
+        Assertions.assertThrows(WorkflowTemplateException.class, templateBad3::executeWorkflowTemplate);
     }
 }

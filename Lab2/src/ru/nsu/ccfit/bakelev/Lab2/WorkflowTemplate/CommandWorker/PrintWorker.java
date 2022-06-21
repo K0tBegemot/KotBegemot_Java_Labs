@@ -7,15 +7,17 @@ import java.util.EmptyStackException;
 public class PrintWorker extends CommandWorker
 {
     @Override
-    public void ExecuteCommand(ExecutionContext context) throws CommandExecuteException
+    public void executeCommand(ExecutionContext context) throws CommandExecuteException
     {
-        try
+        if(context==null || context.stackOfNumbers == null || context.argArray == null || context.aliasMap == null)
         {
-            System.out.println(context.stackOfNumbers.peek());
-        }
-        catch(EmptyStackException e)
-        {
-            throw (CommandExecuteException) new CommandExecuteException("There is no numbers on stack. Command Print.").initCause(e);
+            throw new CommandExecuteException("Null ExecutionContext or needed field of ExecutionContext. Command Print");
+        }else {
+            try {
+                System.out.println(context.stackOfNumbers.peek());
+            } catch (EmptyStackException e) {
+                throw (CommandExecuteException) new CommandExecuteException("There is no numbers on stack. Command Print.").initCause(e);
+            }
         }
     }
 }

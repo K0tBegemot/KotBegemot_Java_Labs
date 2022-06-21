@@ -13,7 +13,7 @@ public class DefineWorkerTest
 {
 
     @Test
-    public void executeCommand()
+    public void test()
     {
         Assertions.assertDoesNotThrow(() -> {
             Logger logger = Logger.getLogger("Lab2");
@@ -22,9 +22,9 @@ public class DefineWorkerTest
             HashMap<String, Double> map = new HashMap<>();
             ExecutionContext context = new ExecutionContext(stack, array, map);
             Fabric fabric = new Fabric(Const.configFile, logger);
-            Assertions.assertDoesNotThrow(fabric::ReadConfigFile);
-            CommandWorker define = fabric.CreateCommandWorker("DEFINE");
-            define.ExecuteCommand(context);
+            Assertions.assertDoesNotThrow(fabric::readConfigFile);
+            CommandWorker define = fabric.createCommandWorker("DEFINE");
+            define.executeCommand(context);
             Assertions.assertEquals(2, context.aliasMap.get(array[0]));
         });
     }

@@ -16,41 +16,41 @@ public class FabricTest {
     {
         Logger logger = Logger.getLogger("Lab2");
         Fabric fabric = new Fabric(Const.configFile, logger);
-        assertDoesNotThrow(fabric::ReadConfigFile);
+        assertDoesNotThrow(fabric::readConfigFile);
         Assertions.assertDoesNotThrow(() -> {
-            CommandWorker PopW = fabric.CreateCommandWorker("POP");
+            CommandWorker PopW = fabric.createCommandWorker("POP");
             Assertions.assertTrue(PopW instanceof PopWorker);
                                             });
         Assertions.assertDoesNotThrow(() -> {
-            CommandWorker PushW = fabric.CreateCommandWorker("PUSH");
+            CommandWorker PushW = fabric.createCommandWorker("PUSH");
             Assertions.assertTrue(PushW instanceof PushWorker);
                                             });
         Assertions.assertDoesNotThrow(() -> {
-            CommandWorker AddW = fabric.CreateCommandWorker("+");
+            CommandWorker AddW = fabric.createCommandWorker("+");
             Assertions.assertTrue(AddW instanceof AddWorker);
                                             });
         Assertions.assertDoesNotThrow(() -> {
-            CommandWorker SubW = fabric.CreateCommandWorker("-");
+            CommandWorker SubW = fabric.createCommandWorker("-");
             Assertions.assertTrue(SubW instanceof SubWorker);
         });
         Assertions.assertDoesNotThrow(() -> {
-            CommandWorker MulW = fabric.CreateCommandWorker("*");
+            CommandWorker MulW = fabric.createCommandWorker("*");
             Assertions.assertTrue(MulW instanceof MulWorker);
         });
         Assertions.assertDoesNotThrow(() -> {
-            CommandWorker DivW = fabric.CreateCommandWorker("/");
+            CommandWorker DivW = fabric.createCommandWorker("/");
             Assertions.assertTrue(DivW instanceof DivWorker);
         });
         Assertions.assertDoesNotThrow(() -> {
-            CommandWorker SqrtW = fabric.CreateCommandWorker("SQRT");
+            CommandWorker SqrtW = fabric.createCommandWorker("SQRT");
             Assertions.assertTrue(SqrtW instanceof SqrtWorker);
         });
         Assertions.assertDoesNotThrow(() -> {
-                    CommandWorker PrintW = fabric.CreateCommandWorker("PRINT");
+                    CommandWorker PrintW = fabric.createCommandWorker("PRINT");
             Assertions.assertTrue(PrintW instanceof PrintWorker);
         });
         Assertions.assertDoesNotThrow(() -> {
-            CommandWorker DefineW = fabric.CreateCommandWorker("DEFINE");
+            CommandWorker DefineW = fabric.createCommandWorker("DEFINE");
             Assertions.assertTrue(DefineW instanceof DefineWorker);
         });
     }

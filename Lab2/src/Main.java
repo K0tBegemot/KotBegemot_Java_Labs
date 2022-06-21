@@ -16,7 +16,7 @@ public class Main
         logger.setLevel(Level.FINER);
         WorkflowTemplate template = new WorkflowTemplate(configFile, commandFile, logger);
         try {
-            template.ExecuteWorkflowTemplate();
+            template.executeWorkflowTemplate();
         }
         catch(WorkflowTemplateException e)
         {

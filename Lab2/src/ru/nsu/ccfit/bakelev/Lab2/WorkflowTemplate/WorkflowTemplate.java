@@ -40,7 +40,7 @@ public class WorkflowTemplate
         numberOfReadedCommandInCF = 0;
     }
 
-    private void ReadQueueFromFile(Scanner reader) throws CommandFileException
+    private void readQueueFromFile(Scanner reader) throws CommandFileException
     {
         if(reader == null)
         {
@@ -82,10 +82,10 @@ public class WorkflowTemplate
         }
     }
 
-    public void ExecuteWorkflowTemplate() throws WorkflowTemplateException
+    public void executeWorkflowTemplate() throws WorkflowTemplateException
     {
         try {
-            fabric.ReadConfigFile();
+            fabric.readConfigFile();
         }
         catch(ConfigFileException e)
         {
@@ -99,7 +99,7 @@ public class WorkflowTemplate
             while(reader.hasNextLine())
             {
                 try {
-                    ReadQueueFromFile(reader);
+                    readQueueFromFile(reader);
                 }
                 catch(CommandFileException e)
                 {
@@ -115,7 +115,7 @@ public class WorkflowTemplate
                     if(executedWorker == null)
                     {
                         try {
-                            executedWorker = fabric.CreateCommandWorker(executedCommand.commandName);
+                            executedWorker = fabric.createCommandWorker(executedCommand.commandName);
                         }
                         catch(NonExistentCommandWorkerException e)
                         {
@@ -125,7 +125,7 @@ public class WorkflowTemplate
                         commandWorkerHashMap.put(executedCommand.commandName, executedWorker);
                     }
                     try {
-                        executedWorker.ExecuteCommand(new ExecutionContext(stackOfNumbers, executedCommand.argArray, aliasMap));
+                        executedWorker.executeCommand(new ExecutionContext(stackOfNumbers, executedCommand.argArray, aliasMap));
                     }
                     catch(CommandExecuteException e)
                     {

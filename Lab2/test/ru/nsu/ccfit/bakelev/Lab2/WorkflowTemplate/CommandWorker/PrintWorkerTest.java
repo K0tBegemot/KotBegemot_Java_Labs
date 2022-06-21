@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 public class PrintWorkerTest {
 
     @Test
-    public void executeCommand()
+    public void test()
     {
         Assertions.assertDoesNotThrow(() -> {
             Logger logger = Logger.getLogger("Lab2");
@@ -24,9 +24,9 @@ public class PrintWorkerTest {
             stack.push(numbers[0]);
             stack.push(numbers[1]);
             Fabric fabric = new Fabric(Const.configFile, logger);
-            Assertions.assertDoesNotThrow(fabric::ReadConfigFile);
-            CommandWorker div = fabric.CreateCommandWorker("PRINT");
-            div.ExecuteCommand(context);
+            Assertions.assertDoesNotThrow(fabric::readConfigFile);
+            CommandWorker div = fabric.createCommandWorker("PRINT");
+            div.executeCommand(context);
             Assertions.assertEquals(numbers[1], context.stackOfNumbers.pop());
         });
     }

@@ -6,14 +6,17 @@ public class SubWorker extends CommandWorker
 {
     private static final int NUMBEROFARGS = 2;
     @Override
-    public void ExecuteCommand(ExecutionContext context) throws CommandExecuteException
+    public void executeCommand(ExecutionContext context) throws CommandExecuteException
     {
-        if(context.stackOfNumbers.size() < NUMBEROFARGS)
+        if(context==null || context.stackOfNumbers == null || context.argArray == null || context.aliasMap == null)
         {
-            throw new CommandExecuteException("Too few arguments on stack. Command Sub");
-        }else
-        {
-            context.stackOfNumbers.push(context.stackOfNumbers.pop() - context.stackOfNumbers.pop());
+            throw new CommandExecuteException("Null ExecutionContext or needed field of ExecutionContext. Command Sub");
+        }else {
+            if (context.stackOfNumbers.size() < NUMBEROFARGS) {
+                throw new CommandExecuteException("Too few arguments on stack. Command Sub");
+            } else {
+                context.stackOfNumbers.push(context.stackOfNumbers.pop() - context.stackOfNumbers.pop());
+            }
         }
     }
 }

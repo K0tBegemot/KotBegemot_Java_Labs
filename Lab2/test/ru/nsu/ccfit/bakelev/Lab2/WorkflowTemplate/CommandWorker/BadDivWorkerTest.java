@@ -1,33 +1,42 @@
 package ru.nsu.ccfit.bakelev.Lab2.WorkflowTemplate.CommandWorker;
 
-import ru.nsu.ccfit.bakelev.Lab2.WorkflowTemplate.Const;
-import ru.nsu.ccfit.bakelev.Lab2.WorkflowTemplate.Fabric.Fabric;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import ru.nsu.ccfit.bakelev.Lab2.WorkflowTemplate.Const;
+import ru.nsu.ccfit.bakelev.Lab2.WorkflowTemplate.Exception.CommandExecuteException;
+import ru.nsu.ccfit.bakelev.Lab2.WorkflowTemplate.Fabric.Fabric;
 
 import java.util.HashMap;
 import java.util.Stack;
 import java.util.logging.Logger;
 
-public class DivWorkerTest {
-
+public class BadDivWorkerTest
+{
     @Test
     public void test()
     {
-        Assertions.assertDoesNotThrow(() -> {
+        Assertions.assertThrows(CommandExecuteException.class, ()->
+        {
             Logger logger = Logger.getLogger("Lab2");
             Stack<Double> stack = new Stack<>();
             String[] array = new String[0];
             HashMap<String, Double> map = new HashMap<>();
             ExecutionContext context = new ExecutionContext(stack, array, map);
-            Double[] numbers = {1.2, 99.0};
+            Double[] numbers = {1.2};
             stack.push(numbers[0]);
-            stack.push(numbers[1]);
             Fabric fabric = new Fabric(Const.configFile, logger);
             Assertions.assertDoesNotThrow(fabric::readConfigFile);
             CommandWorker div = fabric.createCommandWorker("/");
             div.executeCommand(context);
-            Assertions.assertEquals(numbers[1] / numbers[0], context.stackOfNumbers.pop());
+        });
+        Assertions.assertThrows(CommandExecuteException.class, ()->
+        {
+            Logger logger = Logger.getLogger("Lab2");
+            ExecutionContext context = new ExecutionContext(null, null, null);
+            Fabric fabric = new Fabric(Const.configFile, logger);
+            Assertions.assertDoesNotThrow(fabric::readConfigFile);
+            CommandWorker div = fabric.createCommandWorker("/");
+            div.executeCommand(context);
         });
     }
 }
