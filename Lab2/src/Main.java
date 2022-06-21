@@ -1,5 +1,5 @@
-import Lab2.WorkflowTemplate.Exception.WorkflowTemplateException;
-import Lab2.WorkflowTemplate.WorkflowTemplate;
+import ru.nsu.ccfit.bakelev.Lab2.WorkflowTemplate.Exception.WorkflowTemplateException;
+import ru.nsu.ccfit.bakelev.Lab2.WorkflowTemplate.WorkflowTemplate;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
