@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b6e5683d-c80e-4210-8e90-dce45aed6be4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Lab2/WorkflowTemplate/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Lab2/WorkflowTemplate/CommandWorker/AddWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/CommandWorker/AddWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Lab2/WorkflowTemplate/CommandWorker/CommandWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/CommandWorker/CommandWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Lab2/WorkflowTemplate/CommandWorker/DefineWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/CommandWorker/DefineWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Lab2/WorkflowTemplate/CommandWorker/DivWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/CommandWorker/DivWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Lab2/WorkflowTemplate/CommandWorker/ExecutionContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/CommandWorker/ExecutionContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Lab2/WorkflowTemplate/CommandWorker/MulWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/CommandWorker/MulWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Lab2/WorkflowTemplate/CommandWorker/PopWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/CommandWorker/PopWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Lab2/WorkflowTemplate/CommandWorker/PrintWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/CommandWorker/PrintWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Lab2/WorkflowTemplate/CommandWorker/PushWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/CommandWorker/PushWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Lab2/WorkflowTemplate/CommandWorker/SqrtWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/CommandWorker/SqrtWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Lab2/WorkflowTemplate/CommandWorker/SubWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/CommandWorker/SubWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Lab2/WorkflowTemplate/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/Const.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Lab2/WorkflowTemplate/Exception/CommandExecuteException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/Exception/CommandExecuteException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Lab2/WorkflowTemplate/Exception/CommandFileException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/Exception/CommandFileException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Lab2/WorkflowTemplate/Exception/ConfigFileException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/Exception/ConfigFileException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Lab2/WorkflowTemplate/Exception/NonExistentCommandWorkerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/Exception/NonExistentCommandWorkerException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Lab2/WorkflowTemplate/Exception/WorkflowTemplateException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/Exception/WorkflowTemplateException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Lab2/WorkflowTemplate/Fabric/Fabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/Fabric/Fabric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/src/Lab2/WorkflowTemplate/WorkflowTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/WorkflowTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/test/Lab2/WorkflowTemplate/CommandWorker/AddWorkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/test/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/CommandWorker/AddWorkerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/test/Lab2/WorkflowTemplate/CommandWorker/DefineWorkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/test/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/CommandWorker/DefineWorkerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/test/Lab2/WorkflowTemplate/CommandWorker/DivWorkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/test/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/CommandWorker/DivWorkerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/test/Lab2/WorkflowTemplate/CommandWorker/MulWorkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/test/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/CommandWorker/MulWorkerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/test/Lab2/WorkflowTemplate/CommandWorker/PopWorkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/test/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/CommandWorker/PopWorkerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/test/Lab2/WorkflowTemplate/CommandWorker/PrintWorkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/test/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/CommandWorker/PrintWorkerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/test/Lab2/WorkflowTemplate/CommandWorker/PushWorkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/test/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/CommandWorker/PushWorkerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/test/Lab2/WorkflowTemplate/CommandWorker/SqrtWorkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/test/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/CommandWorker/SqrtWorkerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/test/Lab2/WorkflowTemplate/CommandWorker/SubWorkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/test/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/CommandWorker/SubWorkerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/test/Lab2/WorkflowTemplate/Fabric/FabricTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/test/ru/nsu/ccfit/bakelev/Lab2/WorkflowTemplate/Fabric/FabricTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="27SNGGRb3Lxq2t2hpRNY862uaiq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bakel\IdeaProjects\Lab1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Lab1">
+    <configuration name="Lab1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lab1" />
+      <module name="Lab1" />
+      <option name="PROGRAM_PARAMETERS" value="test.txt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="Lab1" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Lab1" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Lab1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b6e5683d-c80e-4210-8e90-dce45aed6be4" name="Changes" comment="" />
+      <created>1649309435280</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649309435280</updated>
+      <workItem from="1649309436467" duration="4055000" />
+      <workItem from="1649946731565" duration="5870000" />
+      <workItem from="1650451765715" duration="5864000" />
+      <workItem from="1650595670584" duration="669000" />
+      <workItem from="1650603749347" duration="18772000" />
+      <workItem from="1650625566540" duration="645000" />
+      <workItem from="1650627848260" duration="51000" />
+      <workItem from="1650785154922" duration="25000" />
+      <workItem from="1650785368975" duration="1259000" />
+      <workItem from="1655786157969" duration="119000" />
+      <workItem from="1655786290474" duration="1074000" />
+      <workItem from="1655788068721" duration="5000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Lab1" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

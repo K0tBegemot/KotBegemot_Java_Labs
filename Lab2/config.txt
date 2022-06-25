@@ -1,0 +1,9 @@
+POP ru.nsu.ccfit.bakelev.Lab2.WorkflowTemplate.CommandWorker.PopWorker
+PUSH ru.nsu.ccfit.bakelev.Lab2.WorkflowTemplate.CommandWorker.PushWorker
++ ru.nsu.ccfit.bakelev.Lab2.WorkflowTemplate.CommandWorker.AddWorker
+- ru.nsu.ccfit.bakelev.Lab2.WorkflowTemplate.CommandWorker.SubWorker
+* ru.nsu.ccfit.bakelev.Lab2.WorkflowTemplate.CommandWorker.MulWorker
+/ ru.nsu.ccfit.bakelev.Lab2.WorkflowTemplate.CommandWorker.DivWorker
+SQRT ru.nsu.ccfit.bakelev.Lab2.WorkflowTemplate.CommandWorker.SqrtWorker
+PRINT ru.nsu.ccfit.bakelev.Lab2.WorkflowTemplate.CommandWorker.PrintWorker
+DEFINE ru.nsu.ccfit.bakelev.Lab2.WorkflowTemplate.CommandWorker.DefineWorker
